@@ -1,5 +1,7 @@
 # Homework 4: L-systems
 
+Nick Moon (moonmoon)
+
 ![](myimg2.PNG)
 
 For my L-System Project, I decided to make Laputa from Castle in the Sky, the Studio Ghibli film. 
@@ -60,9 +62,16 @@ implement one to really understand the underlying mechanisms at play in a progra
 Overall I was satisfied with my background and the L-System engine, although my actual castle and tree could have used a lot
 more polish.
 
+Helpful references:
+https://iquilezles.org/articles/distfunctions/
 
+https://iquilezles.org/articles/palettes/
 
+https://www.sidefx.com/docs/houdini/nodes/sop/lsystem.html
 
+http://dev.thi.ng/gradients/
+
+http://paulbourke.net/fractals/lsys/
 
 ## Base Code
 
