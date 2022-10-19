@@ -57,7 +57,7 @@ rule specified with {XXX}.
 Creating the L-System engine in WebGL definitely took the most time in this project, 
 but it was a very useful opportunity to
 implement one to really understand the underlying mechanisms at play in a program like Houdini.
-Overall I was satisfied with my background and the L-System engine, although my actual castle could have used a lot
+Overall I was satisfied with my background and the L-System engine, although my actual castle and tree could have used a lot
 more polish.
 
 
