@@ -24,6 +24,8 @@ and changed color based on the height offset. To get the lights twinkling in the
 and certain specific noise value and height range checks to create bright orange pixels on the surface of the earth
 (appearing mostly near sources of water). The star field in the background was worley noise based.
 
+My GUI has inputs for parameters like number of iterations, step size, angle, and even the grammars themselves. It is an extensible framework.
+
 My final L-Systems turned out to be:\
 Tree:\
 Premise: A\
