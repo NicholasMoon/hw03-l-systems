@@ -2,6 +2,8 @@
 
 Nick Moon (moonmoon)
 
+Live Demo: https://nicholasmoon.github.io/hw03-l-systems/
+
 ![](myimg2.PNG)
 
 For my L-System Project, I decided to make Laputa from Castle in the Sky, the Studio Ghibli film. 
