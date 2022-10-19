@@ -8,7 +8,7 @@ class Camera {
   fovy: number = 45;
   aspectRatio: number = 1;
   near: number = 0.1;
-  far: number = 1000;
+  far: number = 10000;
   position: vec3 = vec3.create();
   direction: vec3 = vec3.create();
   target: vec3 = vec3.create();
@@ -16,12 +16,13 @@ class Camera {
   right: vec3 = vec3.create();
   forward: vec3 = vec3.create();
 
-  constructor(position: vec3, target: vec3) {
+  constructor(pos: vec3, tar: vec3) {
     const canvas = <HTMLCanvasElement> document.getElementById('canvas');
 
     this.controls = CameraControls(canvas, {
-      position: position,
-      center: target,
+      position: pos,
+      center: tar,
+      eye: pos,
     });
 
     vec3.add(this.target, this.position, this.direction);
@@ -50,7 +51,8 @@ class Camera {
     this.position = vec3.fromValues(this.controls.eye[0], this.controls.eye[1], this.controls.eye[2]);
     this.target = vec3.fromValues(this.controls.center[0], this.controls.center[1], this.controls.center[2]);
     mat4.lookAt(this.viewMatrix, this.controls.eye, this.controls.center, this.controls.up);
-
+    //console.log(this.controls.eye);
+    //console.log(this.position);
     this.position = this.controls.eye;
     this.up = vec3.fromValues(this.controls.up[0], this.controls.up[1], this.controls.up[2]);
     vec3.normalize(this.up, this.up);

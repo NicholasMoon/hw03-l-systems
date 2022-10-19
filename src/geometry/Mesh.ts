@@ -27,6 +27,7 @@ class Mesh extends Drawable {
     let idxTemp: Array<number> = [];
 
     var loadedMesh = new Loader.Mesh(this.objString);
+    console.log(loadedMesh.vertices.length);
 
     //posTemp = loadedMesh.vertices;
     for (var i = 0; i < loadedMesh.vertices.length; i++) {
@@ -52,6 +53,8 @@ class Mesh extends Drawable {
     this.normals = new Float32Array(norTemp);
     this.positions = new Float32Array(posTemp);
     this.uvs = new Float32Array(uvsTemp);
+
+    console.log(this.indices.length);
 
     this.generateIdx();
     this.generatePos();
